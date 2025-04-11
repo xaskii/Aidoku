@@ -349,6 +349,7 @@ class HistoryViewController: UIViewController {
                     }
                 }
                 guard let manga = manga, let chapter = chapter else { continue }
+                CoreDataManager.shared.createManga(manga)
 
                 mangaKeys.append(key)
 
